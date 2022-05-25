@@ -39,7 +39,7 @@ header .logotipo {
 header nav a {
 	color: rgb(35, 18, 131);
 	text-decoration: none;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 header nav a:hover,
@@ -49,10 +49,10 @@ header nav a.activo {
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
-	font-size: 50%px;
-	min-height: 36.62em;
+	font-size: 38%px;
+	min-height: 38.62em;
 	color: rgb(230, 230, 230);
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 1%), url(../img/github-social.png);
+	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.png);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 2.12em;
@@ -75,7 +75,7 @@ header nav a.activo {
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.75em;
-	max-width: 30%;
+	max-width: 60%;
 	margin-bottom: 12.25em;
 }
 
@@ -146,7 +146,7 @@ header nav a.activo {
 	font-size: 40px;
 	height: 50%;
 	top: calc(50% - 25%);
-	line-height: 40px;
+	line-height: 20px;
 	width: 50px;
 	color: #fff;
 	cursor: pointer;
