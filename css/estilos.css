@@ -37,20 +37,20 @@ header .logotipo {
 }
 
 header nav a {
-	color: rgb(35, 18, 131);
+	color: rgb(27, 12, 92);
 	text-decoration: none;
 	margin-right: 15px;
 }
 
 header nav a:hover,
 header nav a.activo {
-	color: #970e0e;
+	color: #000000;
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
-	font-size: 20%px;
-	min-height: 38.62em;
+	font-size: 20px;
+	min-height: 40.62em;
 	color: rgb(230, 230, 230);
 	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.png);
 	background-position: center center;
@@ -109,7 +109,7 @@ header nav a.activo {
 
 .contenedor-titulo-controles h3 {
 	color: #fff;
-	font-size: 30px;
+	font-size: 60px;
 }
 
 .contenedor-titulo-controles .indicadores button {
@@ -148,7 +148,7 @@ header nav a.activo {
 	top: calc(50% - 25%);
 	line-height: 20px;
 	width: 50px;
-	color: #fff;
+	color: rgb(252, 6, 6);
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
