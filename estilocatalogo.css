@@ -56,7 +56,7 @@ header nav a.activo {
 	background: linear-gradient(rgba(0, 0, 0, .45) 0%, rgba(0,0,0,.45) 1%), url(img/github-social.png);
 	background-position: center center;
 	background-size: cover;
-	/* margin-bottom: 2.12em; */
+	margin-bottom: 2.12em;
 	display: flex;
 	align-items: end;
 }
