@@ -14,7 +14,7 @@ body {
 	background: var(--fondo);
 	font-family: 'Open Sans', sans-serif;
 }
-
+/* --------------------------BOTON MAS CUPON ------------------------------ */
 .contenedor {
 	width: 90%;
 	margin: auto;
@@ -23,56 +23,44 @@ body {
 header {
 	padding: 20px 0;
 }
-
+/* -----------------------------CENTRADO DE LOGOTICO--------------------- */
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
+/* ------------------------- LETRA DEL ENCABEZADO ---------------------------- */
 header .logotipo {
 	font-family: 'Racing Sans One', cursive;
 	font-weight: normal;
 	color: var(--rojo);
 	font-size: 62px;
 }
-
+/* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: rgb(27, 12, 92);
+	color: hsl(0, 83%, 32%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 
-header nav a:hover,
-header nav a.activo {
-	color: #000000;
-}
-
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
-.pelicula-principal {
+/* ---- ----- ----- FONDO ----- ----- ----- */
+/* .pelicula-principal {
 	font-size: 20px;
-	min-height: 60.62em;
+	min-height: 40.62em;
 	color: rgb(230, 230, 230);
-	background: linear-gradient(rgba(0, 0, 0, .0) 0%, rgba(0,0,0,.0) 1%), url(img/github-social001.png);
-	background-position: auto;
+	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.png);
+	background-position: center center;
 	background-size: cover;
-	/* margin-bottom: 2.12em; */
+	margin-bottom: 2.12em;
 	display: flex;
 	align-items: end;
-}
-
+} */
+/* ---------------------------------ARRIBA FOOTER------------------------ */
 .pelicula-principal .contenedor {
 	margin: 0 auto;
 	margin-bottom: 6.25em;
 }
-
-.pelicula-principal .titulo {
-	font-weight: 600;
-	font-size: 2.12em;
-	margin-bottom: 0.4em;
-	text-shadow: 1px 2px 2px #000;
-}
-
+/* ---------------------------------ALINEACION DE FONDO Y FOOTER ---------------------- */
 .pelicula-principal .descripcion {
 	font-weight: normal;
 	font-size: 1em;
@@ -80,22 +68,22 @@ header nav a.activo {
 	max-width: 60%;
 	margin-bottom: 12.25em;
 }
-
+/* -------------------------- BOTON INFORMACIÓN -------------------------- */
 .pelicula-principal .boton {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(255, 0, 0, 0.5);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: rgb(117, 117, 117);
+	color: rgb(255, 255, 255);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
 	font-size: 1.12em;
 }
-
+/* --------------------------  BOTON ABRE Y CIERRA ------------------------- */
 .pelicula-principal .boton:hover {
-	background: #fff;
-	color: rgb(97, 95, 95);
+	background: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
 }
 
 .pelicula-principal .boton i {
@@ -108,95 +96,31 @@ header nav a.activo {
 	justify-content: space-between;
 	align-items: end;
 }
-
-.contenedor-titulo-controles h3 {
-	color: #fff;
-	font-size: 60px;
-}
-
-.contenedor-titulo-controles .indicadores button {
-	background: rgb(255, 255, 255);
-	height: 3px;
-	width: 10px;
-	cursor: pointer;
-	border: none;
-	margin-right: 2px;
-}
-
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
-	background: #53e70e;
-}
-
-
-/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
-.peliculas-recomendadas {
-	margin-bottom: 70px;
-}
-
-.peliculas-recomendadas .contenedor-principal {
-	display: flex;
-	align-items: center;
+/* --------------------------- FOOTER MAESTRO ------------------------ */
+*{
+	margin: 0;
+	padding: 0;
+	color: #d9d9d9;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  .content1{
 	position: relative;
-}
+	margin: 130px auto;
+	text-align: center;
+	padding: 0 20px;
+  }
+  /* -------------------------- COLOR DE FOOTER ----------------------- */
+  .content1 .text{
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #202020;
+  }
+  
+  /* ************************************************************************** */
+/* ********************ESTA PARTE HACE EL EFECTO RESPONCIVO****************** */
 
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
-.peliculas-recomendadas .contenedor-principal .flecha-derecha {
-	position: absolute;
-	border: none;
-	background: rgba(0,0,0,0.3);
-	font-size: 40px;
-	height: 50%;
-	top: calc(50% - 25%);
-	line-height: 20px;
-	width: 50px;
-	color: rgb(252, 6, 6);
-	cursor: pointer;
-	z-index: 500;
-	transition: .2s ease all;
-}
 
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
-.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
-	background: rgba(163, 6, 6, 0.9);
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
-	left: 0;
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-derecha {
-	right: 0;
-}
-
-/* ---- ----- ----- Carousel ----- ----- ----- */
-.peliculas-recomendadas .contenedor-carousel {
-	width: 100%;
-	padding: 20px 0;
-	overflow: hidden;
-	scroll-behavior: smooth;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel {
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
-	min-width: 20%;
-	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
-	transform: scale(1.2);
-	transform-origin: center;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
-	width: 100%;
-	vertical-align: top;
-}
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {

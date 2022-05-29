@@ -14,65 +14,232 @@ body {
 	background: var(--fondo);
 	font-family: 'Open Sans', sans-serif;
 }
-
+/* --------------------------BOTON MAS CUPON ------------------------------ */
 .contenedor {
 	width: 90%;
 	margin: auto;
 }
 
 header {
-	padding: 20px 0;
+	padding: -30px 0;
 }
-
+/* -----------------------------CENTRADO DE LOGOTICO--------------------- */
 header .contenedor {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
+/* ------------------------- LETRA DEL ENCABEZADO ---------------------------- */
 header .logotipo {
 	font-family: 'Racing Sans One', cursive;
 	font-weight: normal;
 	color: var(--rojo);
 	font-size: 62px;
 }
-
+/* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: rgb(27, 12, 92);
+	color: hsl(0, 83%, 32%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 
-header nav a:hover,
-header nav a.activo {
-	color: #000000;
+/* ----------------------------- FOTOS DEL CATALOGO ----------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #fff;
+  background: #007bff;
+}
+body{
+  padding: 10px;
+}
+.wrapper{
+  margin: 100px auto;
+  max-width: 1100px;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #2b2424;
+  border-radius: 50px;
+  border: 1px solid #ce0404;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: rgb(255, 255, 255);
+  background: #b33838;
 }
 
-/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
-.pelicula-principal {
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 7px;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #007bff;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  display: flex;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 30px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .gallery .image{
+    width: 100%;
+  }
+}
+/* ---- ----- ----- FONDO ----- ----- ----- */
+/* .pelicula-principal {
 	font-size: 20px;
 	min-height: 40.62em;
 	color: rgb(230, 230, 230);
-	background: linear-gradient(rgba(0, 0, 0, .45) 0%, rgba(0,0,0,.45) 1%), url(img/github-social.png);
+	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.png);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 2.12em;
 	display: flex;
 	align-items: end;
-}
-
+} */
+/* ---------------------------------ARRIBA FOOTER------------------------ */
 .pelicula-principal .contenedor {
 	margin: 0 auto;
 	margin-bottom: 6.25em;
 }
-
-.pelicula-principal .titulo {
-	font-weight: 600;
-	font-size: 2.12em;
-	margin-bottom: 0.4em;
-	text-shadow: 1px 2px 2px #000;
-}
-
+/* ---------------------------------ALINEACION DE FONDO Y FOOTER ---------------------- */
 .pelicula-principal .descripcion {
 	font-weight: normal;
 	font-size: 1em;
@@ -80,22 +247,22 @@ header nav a.activo {
 	max-width: 60%;
 	margin-bottom: 12.25em;
 }
-
+/* -------------------------- BOTON INFORMACIÓN -------------------------- */
 .pelicula-principal .boton {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(255, 0, 0, 0.5);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: rgb(117, 117, 117);
+	color: rgb(255, 255, 255);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
 	font-size: 1.12em;
 }
-
+/* --------------------------  BOTON ABRE Y CIERRA ------------------------- */
 .pelicula-principal .boton:hover {
-	background: #fff;
-	color: rgb(97, 95, 95);
+	background: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
 }
 
 .pelicula-principal .boton i {
@@ -108,95 +275,10 @@ header nav a.activo {
 	justify-content: space-between;
 	align-items: end;
 }
-
-.contenedor-titulo-controles h3 {
-	color: #fff;
-	font-size: 60px;
-}
-
-.contenedor-titulo-controles .indicadores button {
-	background: rgb(255, 255, 255);
-	height: 3px;
-	width: 10px;
-	cursor: pointer;
-	border: none;
-	margin-right: 2px;
-}
-
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
-	background: #53e70e;
-}
+/* ************************************************************************** */
+/* ********************ESTA PARTE HACE EL EFECTO RESPONCIVO****************** */
 
 
-/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
-.peliculas-recomendadas {
-	margin-bottom: 70px;
-}
-
-.peliculas-recomendadas .contenedor-principal {
-	display: flex;
-	align-items: center;
-	position: relative;
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
-.peliculas-recomendadas .contenedor-principal .flecha-derecha {
-	position: absolute;
-	border: none;
-	background: rgba(0,0,0,0.3);
-	font-size: 40px;
-	height: 50%;
-	top: calc(50% - 25%);
-	line-height: 20px;
-	width: 50px;
-	color: rgb(252, 6, 6);
-	cursor: pointer;
-	z-index: 500;
-	transition: .2s ease all;
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
-.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
-	background: rgba(163, 6, 6, 0.9);
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
-	left: 0;
-}
-
-.peliculas-recomendadas .contenedor-principal .flecha-derecha {
-	right: 0;
-}
-
-/* ---- ----- ----- Carousel ----- ----- ----- */
-.peliculas-recomendadas .contenedor-carousel {
-	width: 100%;
-	padding: 20px 0;
-	overflow: hidden;
-	scroll-behavior: smooth;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel {
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
-	min-width: 20%;
-	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
-	transform: scale(1.2);
-	transform-origin: center;
-}
-
-.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
-	width: 100%;
-	vertical-align: top;
-}
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {
@@ -241,6 +323,27 @@ header nav a.activo {
 	font-weight: 600;
 	color: #202020;
   }
+/* --------------------------- FOOTER MAESTRO ------------------------ */
+*{
+	margin: 0;
+	padding: 0;
+	color: #d9d9d9;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  .content1{
+	position: relative;
+	margin: 130px auto;
+	text-align: center;
+	padding: 0 20px;
+  }
+  /* -------------------------- COLOR DE FOOTER ----------------------- */
+  .content1 .text{
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #202020;
+  }
+  
   footer{
 	position: -50%;
 	bottom: -100px;

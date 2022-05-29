@@ -82,11 +82,11 @@ header nav a.activo {
 }
 
 .pelicula-principal .boton {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(255, 0, 0, 0.5);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: rgb(117, 117, 117);
+	color: rgb(255, 255, 255);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -94,8 +94,8 @@ header nav a.activo {
 }
 
 .pelicula-principal .boton:hover {
-	background: #fff;
-	color: rgb(97, 95, 95);
+	background: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
 }
 
 .pelicula-principal .boton i {
