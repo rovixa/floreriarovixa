@@ -41,6 +41,11 @@ header nav a {
 	color: hsl(0, 83%, 32%);
 	text-decoration: none;
 	margin-right: 15px;
+
+}
+header nav a:hover,
+header nav a.activo {
+	color: #000000;
 }
 
 /* ---- ----- ----- FONDO ----- ----- ----- */
@@ -215,7 +220,7 @@ header nav a {
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background: #1a1a1a;
+	background: #bf0c0c;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -223,7 +228,7 @@ header nav a {
 	transition: 0.3s;
   }
   .left .content .social a span:hover{
-	background: #f12020;
+	background: #881010;
   }
   .center .content .fas{
 	font-size: 1.4375rem;

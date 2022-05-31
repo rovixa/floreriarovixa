@@ -38,9 +38,13 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: hsl(236, 64%, 27%);
+	color: hsl(0, 83%, 32%);
 	text-decoration: none;
 	margin-right: 15px;
+}
+	header nav a:hover,
+	header nav a.activo {
+		color: #000000;
 }
 
 /* ----------------------------- FOTOS DEL CATALOGO ----------------------------- */
@@ -58,10 +62,10 @@ header nav a {
   background: #007bff;
 }
 body{
-  padding: 10px;
+  padding: 0px;
 }
 .wrapper{
-	background: linear-gradient(rgba(0, 0, 0, .80) 0%, rgba(0,0,0,.80) 1%), url(img/fibra\ de\ carbono.jpg);
+	/* background: linear-gradient(rgba(0, 0, 0, .80) 0%, rgba(0,0,0,.80) 1%), url(img/fibra\ de\ carbono.jpg); */
 	background-size: cover;
 	align-items: end;
 
@@ -79,9 +83,9 @@ body{
 }
 /* *************************** BOTONES **************************** */
 .items span{
-  background: rgba(243, 4, 4, 0.5);
+    background: rgba(16, 4, 83, 0.897);
 	border: none;
-	border-radius: 0.31em;
+	border-radius: 0.20em;
 	padding: 0.93em 1.87em;
 	color: rgb(255, 255, 255);
 	margin-right: .50em;
@@ -91,8 +95,8 @@ body{
 }
 .items span.active,
 .items span:hover{
-  color: rgb(255, 255, 255);
-  background: #0b0449;
+  color: rgb(251, 255, 1);
+  background: rgba(0, 0, 0, 0.849);
 }
 
 .gallery{
@@ -254,7 +258,7 @@ body{
 }
 /* -------------------------- BOTON INFORMACIÓN -------------------------- */
 .pelicula-principal .boton {
-	background: rgba(255, 0, 0, 0.5);
+	background: rgba(21, 4, 172, 0.5);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
@@ -378,7 +382,7 @@ body{
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background: #1a1a1a;
+	background: #bf0c0c;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;

@@ -38,7 +38,7 @@ header .logotipo {
 }
 
 header nav a {
-	color: rgb(27, 12, 92);
+	color: hsl(0, 83%, 32%);
 	text-decoration: none;
 	margin-right: 15px;
 }
@@ -291,7 +291,7 @@ header nav a.activo {
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background: #1a1a1a;
+	background:#bf0c0c;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
