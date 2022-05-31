@@ -95,8 +95,8 @@ body{
 }
 .items span.active,
 .items span:hover{
-  color: rgb(251, 255, 1);
-  background: rgba(0, 0, 0, 0.849);
+  color: rgb(255, 255, 255);
+  background: rgba(255, 0, 0, 0.836);
 }
 
 .gallery{
