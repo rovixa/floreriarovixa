@@ -4,6 +4,7 @@
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -16,7 +17,7 @@ body {
 }
 /* --------------------------BOTON MAS CUPON ------------------------------ */
 .contenedor {
-	width: 90%;
+	width: 0%;
 	margin: auto;
 }
 
