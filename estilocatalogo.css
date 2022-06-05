@@ -38,13 +38,13 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: hsl(0, 0%, 100%);
+	color: hsl(0, 100%, 50%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 	header nav a:hover,
 	header nav a.activo {
-		color: hsl(0, 100%, 50%);
+		color: hsl(56, 100%, 50%);
 }
 
 /* ----------------------------- FOTOS DEL CATALOGO ----------------------------- */
