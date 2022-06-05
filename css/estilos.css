@@ -45,7 +45,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.activo {
-	color: hsl(229, 100%, 50%);
+	color: hsl(192, 100%, 50%);
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
