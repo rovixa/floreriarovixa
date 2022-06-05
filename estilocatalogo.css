@@ -1,5 +1,5 @@
 :root {
-	--rojo: hsl(0, 1%, 53%);
+	--rojo: hsl(0, 78%, 56%);
 	--fondo: #000000;
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
@@ -83,11 +83,11 @@ body{
 }
 /* *************************** BOTONES **************************** */
 .items span{
-    background: rgba(16, 4, 83, 0.897);
+    background: hsl(192, 100%, 50%);
 	border: none;
 	border-radius: 0.20em;
 	padding: 0.93em 1.87em;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
