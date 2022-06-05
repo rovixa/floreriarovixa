@@ -1,6 +1,6 @@
 :root {
-	--rojo: hsl(0, 83%, 32%);
-	--fondo: rgb(255, 255, 255);
+	--rojo: hsl(0, 94%, 43%);
+	--fondo: rgb(0, 0, 0);
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
 
@@ -40,14 +40,14 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: hsl(0, 83%, 32%);
+	color: hsl(0, 0%, 100%);
 	text-decoration: none;
 	margin-right: 15px;
 
 }
 header nav a:hover,
 header nav a.activo {
-	color: #000000;
+	color: hsl(251, 100%, 50%);
 }
 
 /* ---- ----- ----- FONDO ----- ----- ----- */
@@ -60,6 +60,7 @@ header nav a.activo {
 	margin-bottom: 2.12em;
 	display: flex;
 	align-items: end;
+	
 }
 /* ---------------------------------ARRIBA FOOTER------------------------ */
 .pelicula-principal .contenedor {
@@ -140,7 +141,7 @@ header nav a.activo {
 	}
 
 	.pelicula-principal {
-		font-size: 9px;
+		font-size: 7.5px;
 	}
 
 	.pelicula-principal .descripcion {
