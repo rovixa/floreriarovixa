@@ -83,11 +83,11 @@ body{
 }
 /* *************************** BOTONES **************************** */
 .items span{
-    background: hsl(192, 100%, 50%);
+    background: hsl(216, 97%, 30%);
 	border: none;
 	border-radius: 0.20em;
 	padding: 0.93em 1.87em;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
