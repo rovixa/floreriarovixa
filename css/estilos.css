@@ -38,14 +38,14 @@ header .logotipo {
 }
 
 header nav a {
-	color: hsl(0, 0%, 100%);
+	color: hsl(0, 1%, 57%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 
 header nav a:hover,
 header nav a.activo {
-	color: hsl(192, 100%, 50%);
+	color: hsl(200, 1%, 39%);
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */

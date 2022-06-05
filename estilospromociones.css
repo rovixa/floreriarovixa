@@ -40,7 +40,7 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: #ffffff;
+	color: hsl(0, 1%, 57%);
 	text-decoration: none;
 	margin-right: 15px;
 
