@@ -1,6 +1,6 @@
 :root {
-	--rojo: hsl(0, 78%, 56%);
-	--fondo: rgb(0, 0, 0);
+	--rojo: hsl(0, 85%, 75%);
+	--fondo: rgb(255, 255, 255);
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
 
@@ -40,20 +40,20 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: hsl(0, 1%, 57%);
+	color: hsl(298, 70%, 31%);
 	text-decoration: none;
 	margin-right: 15px;
 
 }
 header nav a:hover,
 header nav a.activo {
-	color: hsl(200, 1%, 39%);
+	color: hsl(318, 93%, 54%);
 }
 
 /* ---- ----- ----- FONDO ----- ----- ----- */
 .pelicula-principal {
 
-	background: url(img/promo_ok.png);
+	background: url(img/github-social.png);
 	background-position: center;
 	margin: 0 auto;
 	background-size: cover;
@@ -77,11 +77,11 @@ header nav a.activo {
 }
 /* -------------------------- BOTON INFORMACIÓN -------------------------- */
 .pelicula-principal .boton {
-	background: rgba(0, 0, 0, 0.548);
+	background: hsl(318, 44%, 30%);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: rgb(251, 255, 0);
+	color: rgb(255, 227, 253);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -89,8 +89,8 @@ header nav a.activo {
 }
 /* --------------------------  BOTON ABRE Y CIERRA ------------------------- */
 .pelicula-principal .boton:hover {
-	background: rgb(0, 0, 0);
-	color: rgb(255, 0, 0);
+	background: rgb(255, 199, 199);
+	color: hsl(310, 49%, 33%);
 }
 
 .pelicula-principal .boton i {
@@ -165,18 +165,18 @@ header nav a.activo {
   .content1 .text{
 	font-size: 2.5rem;
 	font-weight: 600;
-	color: #202020;
+	color: #5e095e;
   }
   .content1 .p{
 	font-size: 2.1875rem;
 	font-weight: 600;
-	color: #202020;
+	color:  #e493e4;
   }
   footer{
 	position: -50%;
 	bottom: -100px;
 	width: 100%;
-	background: #111;
+	background: rgb(51, 8, 45);
   }
   .main-content{
 	display: flex;
@@ -200,14 +200,14 @@ header nav a.activo {
 	top: -10px;
 	height: 2px;
 	width: 100%;
-	background: #1a1a1a;
+	background: #910785;
   }
   .box .content:after{
 	position: absolute;
 	content: '';
 	height: 2px;
 	width: 15%;
-	background: #f12020;
+	background: #f17878;
 	top: -10px;
   }
   .left .content p{
@@ -222,7 +222,7 @@ header nav a.activo {
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background: #bf0c0c;
+	background: #8b0074;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -230,11 +230,11 @@ header nav a.activo {
 	transition: 0.3s;
   }
   .left .content .social a span:hover{
-	background: #881010;
+	background: #f14c4c;
   }
   .center .content .fas{
 	font-size: 1.4375rem;
-	background: #bf0c0c;
+	background: #8b0074;
 	height: 45px;
 	width: 45px;
 	line-height: 45px;
@@ -244,7 +244,7 @@ header nav a.activo {
 	cursor: pointer;
   }
   .center .content .fas:hover{
-	background: #f12020;
+	background: #f14c4c;
   }
   .center .content .text{
 	font-size: 1.0625rem;

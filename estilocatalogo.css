@@ -1,6 +1,6 @@
 :root {
-	--rojo: hsl(0, 78%, 56%);
-	--fondo: #000000;
+	--rojo: hsl(0, 85%, 75%);
+	--fondo: #ffffff;
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
 
@@ -38,13 +38,13 @@ header .logotipo {
 }
 /* -----------------------------LETRA DEL MENU ---------------------------- */
 header nav a {
-	color: hsl(0, 1%, 57%);
+	color: hsl(298, 70%, 31%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 	header nav a:hover,
 	header nav a.activo {
-		color: hsl(200, 1%, 39%);
+		color: hsl(318, 93%, 54%);
 }
 
 /* ----------------------------- FOTOS DEL CATALOGO ----------------------------- */
@@ -65,7 +65,7 @@ body{
   padding: 0px;
 }
 .wrapper{
-	/* background: linear-gradient(rgba(0, 0, 0, .80) 0%, rgba(0,0,0,.80) 1%), url(img/fibra\ de\ carbono.jpg); */
+	background: url(img/github-social.png);
 	background-size: cover;
 	align-items: end;
 
@@ -83,11 +83,11 @@ body{
 }
 /* *************************** BOTONES **************************** */
 .items span{
-    background: hsl(0, 0%, 33%);
+    background: hsl(318, 44%, 30%);
 	border: none;
 	border-radius: 0.20em;
 	padding: 0.93em 1.87em;
-	color: rgb(255, 255, 255);
+	color: rgb(255, 227, 253);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -95,8 +95,8 @@ body{
 }
 .items span.active,
 .items span:hover{
-  color: rgb(255, 255, 255);
-  background: hsl(180, 1%, 19%);
+  color: rgb(255, 199, 199);
+  background: hsl(310, 49%, 33%);
 }
 
 .gallery{
@@ -325,18 +325,18 @@ body{
   .content1 .text{
 	font-size: 2.5rem;
 	font-weight: 600;
-	color: #202020;
+	color: #5e095e;
   }
   .content1 .p{
 	font-size: 2.1875rem;
 	font-weight: 600;
-	color: #202020;
+	color: #e493e4;
   }
   footer{
 	position: -50%;
 	bottom: -100px;
 	width: 100%;
-	background: #111;
+	background: rgb(51, 8, 45);
   }
   .main-content{
 	display: flex;
@@ -360,14 +360,14 @@ body{
 	top: -10px;
 	height: 2px;
 	width: 100%;
-	background: #1a1a1a;
+	background: #910785;
   }
   .box .content:after{
 	position: absolute;
 	content: '';
 	height: 2px;
-	width: 15%;
-	background: #f12020;
+	width: 40%;
+	background: #f17878;
 	top: -10px;
   }
   .left .content p{
@@ -382,7 +382,7 @@ body{
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background: #bf0c0c;
+	background: #8b0074;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -390,11 +390,11 @@ body{
 	transition: 0.3s;
   }
   .left .content .social a span:hover{
-	background: #f12020;
+	background: #f14c4c;
   }
   .center .content .fas{
 	font-size: 1.4375rem;
-	background: #bf0c0c;
+	background: #8b0074;
 	height: 45px;
 	width: 45px;
 	line-height: 45px;
@@ -404,7 +404,7 @@ body{
 	cursor: pointer;
   }
   .center .content .fas:hover{
-	background: #f12020;
+	background: #f14c4c;
   }
   .center .content .text{
 	font-size: 1.0625rem;
@@ -444,14 +444,14 @@ body{
 	width: 100%;
 	border: none;
 	outline: none;
-	background: #f12020;
+	background: rgb(175, 79, 79);
 	font-size: 1.0625rem;
 	font-weight: 500;
 	cursor: pointer;
 	transition: .3s;
   }
   .right form .btn button:hover{
-	background: #000;
+	background: rgb(0, 0, 0);
   }
   .bottom center{
 	padding: 5px;

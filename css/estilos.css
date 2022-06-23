@@ -1,6 +1,6 @@
 :root {
-	--rojo: hsl(0, 78%, 56%);
-	--fondo: rgb(0, 0, 0);
+	--rojo: hsl(0, 74%, 71%);
+	--fondo: rgb(255, 255, 255);
 	/* text-shadow: 1px 2px 2px rgb(122, 121, 121); */
 }
 
@@ -38,14 +38,14 @@ header .logotipo {
 }
 
 header nav a {
-	color: hsl(0, 1%, 57%);
+	color: hsl(298, 70%, 31%);
 	text-decoration: none;
 	margin-right: 15px;
 }
 
 header nav a:hover,
 header nav a.activo {
-	color: hsl(200, 1%, 39%);
+	color: hsl(318, 93%, 54%);
 }
 
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
@@ -68,9 +68,9 @@ header nav a.activo {
 
 .pelicula-principal .titulo {
 	font-weight: 600;
-	font-size: 2.12em;
+	font-size: 4.12em;
 	margin-bottom: 0.4em;
-	text-shadow: 1px 2px 2px #000;
+	text-shadow: 1px 2px 2px rgb(98, 34, 141);
 }
 
 .pelicula-principal .descripcion {
@@ -80,13 +80,13 @@ header nav a.activo {
 	max-width: 60%;
 	margin-bottom: 12.25em;
 }
-
+/* BOTON DE PROMOCION */
 .pelicula-principal .boton {
-	background: rgba(255, 0, 0, 0.5);
+	background: rgba(245, 129, 129, 0.699);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: rgb(255, 255, 255);
+	color: rgb(252, 155, 155);
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -94,8 +94,8 @@ header nav a.activo {
 }
 
 .pelicula-principal .boton:hover {
-	background: rgb(0, 0, 0);
-	color: rgb(255, 0, 0);
+	background: rgb(104, 13, 96);
+	color: rgb(235, 102, 102);
 }
 
 .pelicula-principal .boton i {
@@ -110,12 +110,12 @@ header nav a.activo {
 }
 
 .contenedor-titulo-controles h3 {
-	color: #fff;
+	color: rgb(248, 141, 141);
 	font-size: 60px;
 }
 
 .contenedor-titulo-controles .indicadores button {
-	background: rgb(255, 255, 255);
+	background: rgb(241, 129, 129);
 	height: 3px;
 	width: 10px;
 	cursor: pointer;
@@ -144,13 +144,13 @@ header nav a.activo {
 .peliculas-recomendadas .contenedor-principal .flecha-derecha {
 	position: absolute;
 	border: none;
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(50, 185, 102, 0.3);
 	font-size: 40px;
 	height: 50%;
 	top: calc(50% - 25%);
 	line-height: 20px;
 	width: 50px;
-	color: rgb(252, 6, 6);
+	color: rgb(72, 17, 104);
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
@@ -221,7 +221,7 @@ header nav a.activo {
 *{
 	margin: 0;
 	padding: 0;
-	color: #d9d9d9;
+	color: #ffffff;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
   }
@@ -234,18 +234,18 @@ header nav a.activo {
   .content1 .text{
 	font-size: 2.5rem;
 	font-weight: 600;
-	color: #202020;
+	color: #5e095e;
   }
   .content1 .p{
 	font-size: 2.1875rem;
 	font-weight: 600;
-	color: #202020;
+	color: #e493e4;
   }
   footer{
 	position: -50%;
 	bottom: -100px;
 	width: 100%;
-	background: #111;
+	background: rgb(51, 8, 45);
   }
   .main-content{
 	display: flex;
@@ -269,14 +269,14 @@ header nav a.activo {
 	top: -10px;
 	height: 2px;
 	width: 100%;
-	background: #1a1a1a;
+	background: #910785;
   }
   .box .content:after{
 	position: absolute;
 	content: '';
 	height: 2px;
-	width: 15%;
-	background: #f12020;
+	width: 30%;
+	background: #f17878;
 	top: -10px;
   }
   .left .content p{
@@ -291,7 +291,7 @@ header nav a.activo {
   .left .content .social a span{
 	height: 40px;
 	width: 40px;
-	background:#bf0c0c;
+	background:#8b0074;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -299,11 +299,11 @@ header nav a.activo {
 	transition: 0.3s;
   }
   .left .content .social a span:hover{
-	background: #f12020;
+	background: #f14c4c;
   }
   .center .content .fas{
 	font-size: 1.4375rem;
-	background: #bf0c0c;
+	background: #8b0074;
 	height: 45px;
 	width: 45px;
 	line-height: 45px;
@@ -313,7 +313,7 @@ header nav a.activo {
 	cursor: pointer;
   }
   .center .content .fas:hover{
-	background: #f12020;
+	background: #f14c4c;
   }
   .center .content .text{
 	font-size: 1.0625rem;
@@ -360,7 +360,7 @@ header nav a.activo {
 	transition: .3s;
   }
   .right form .btn button:hover{
-	background: #000;
+	background: rgb(175, 79, 79);
   }
   .bottom center{
 	padding: 5px;
