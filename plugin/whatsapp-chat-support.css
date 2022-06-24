@@ -306,7 +306,7 @@
     .wcs_popup_person_container{
         /*max-height: 470px;
         overflow-y: scroll;*/
-        background: #fff;
+        background: rgb(255, 255, 255);
         padding: 20px;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
