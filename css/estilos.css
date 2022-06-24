@@ -8,6 +8,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	
 }
 
 body {
@@ -53,7 +55,7 @@ header nav a.activo {
 	font-size: 20px;
 	min-height: 40.62em;
 	color: rgb(230, 230, 230);
-	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.png);
+	background: linear-gradient(rgba(0, 0, 0, .25) 0%, rgba(0,0,0,.25) 1%), url(../img/github-social.jpg);
 	background-position: center center;
 	background-size: cover;
 	/* margin-bottom: 2.12em; */
@@ -400,4 +402,6 @@ header nav a.activo {
   textarea{
   outline: none;
   outline:none;
-  }
+
+}
+  
