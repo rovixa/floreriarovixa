@@ -76,7 +76,7 @@ body{
 }
 .wrapper .items{
   display: flex;
-  max-width: 720px;
+  max-width: 920px;
   width: 100%;
   justify-content: space-between;
   padding: 20px;
@@ -91,7 +91,7 @@ body{
 	margin-right: .50em;
 	cursor: pointer;
 	transition: .3s ease all;
-	font-size: 1.12em;
+	font-size: 1.0em;
 }
 .items span.active,
 .items span:hover{
